@@ -1,0 +1,28 @@
+.body {
+  background: rgb(36, 36, 36);
+}
+.head {
+  color: rgb(255, 80, 80);
+  text-shadow: 1px 1px rgb(68, 68, 68);
+  margin-left: 2%;
+  margin-right: auto;
+}
+.list {
+  color: white;
+  margin-left: 2%;
+  margin-right: auto;
+}
+.link {
+  color: rgb(255, 80, 80);
+}
+.link:hover {
+  color: rgb(255, 122, 122);
+}
+.text {
+  color: rgb(217, 217, 217);
+  margin-left: 2%;
+  margin-right: auto;
+}
+.members {
+  color: rgb(217, 217, 217);
+}

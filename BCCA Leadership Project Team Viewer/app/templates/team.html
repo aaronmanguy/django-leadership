@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leadership Teams</title>
+    <link rel="stylesheet" href="{% static "styles.css" %}">
+  </head>
+  <body class="body">
+    {% if teams %}
+    <h1 class="head">Leadership Teams</h1>
+    <ul class="list">
+      {%for team in teams%}
+      <li><a class="link" href="/{{team}}">{{team}}</a></li>
+      {%endfor%}
+    </ul>
+    {%elif team %}
+    <h1 class="head">{{team.name}}</h1>
+    <p class="text">{{team.desc}}</p>
+    <ul class="list">
+      {% for member in team.members%}
+      <li><p class="members">{{member}}</p></li>
+      {%endfor%}
+    </ul>
+    {% endif %}
+  </body>
+</html>
